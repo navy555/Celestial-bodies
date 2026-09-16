@@ -1,9 +1,5 @@
---
--- PostgreSQL database dump
---
 
--- Dumped from database version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
--- Dumped by pg_dump version 12.22 (Ubuntu 12.22-0ubuntu0.20.04.4)
+-- PostgreSQL database dump
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -17,9 +13,8 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 DROP DATABASE universe;
---
+
 -- Name: universe; Type: DATABASE; Schema: -; Owner: freecodecamp
---
 
 CREATE DATABASE universe WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'C.UTF-8' LC_CTYPE = 'C.UTF-8';
 
@@ -74,12 +69,9 @@ ALTER TABLE public.astronaut_astronaut_id_seq OWNER TO freecodecamp;
 
 --
 -- Name: astronaut_astronaut_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
---
 
 ALTER SEQUENCE public.astronaut_astronaut_id_seq OWNED BY public.astronaut.astronaut_id;
 
-
---
 -- Name: galaxy; Type: TABLE; Schema: public; Owner: freecodecamp
 --
 
